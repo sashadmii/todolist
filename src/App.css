@@ -1,38 +1,77 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Dekko';
+  font-size: 1.25rem;
+  color: #4c3d3d;
+}
+
+.container {
+  background-color: #fff7d4;
+  width: 37.5rem;
+  margin: 5rem auto;
+  padding: 3rem;
+}
+
+.inputField {
   text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#taskInput {
+  width: 70%;
+  border: none;
+  border-bottom: 0.0625rem solid #4c3d3d;
+  outline: 0;
+  font-family: 'Dekko';
+  font-size: 1.25rem;
+  padding: 0.4rem 0;
+  background: transparent;
+  transition: border-color 0.2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.addItemButton {
+  margin-left: 1.6rem;
   align-items: center;
+  background-color: #ffd95a;
+  border: 0.0625rem solid #4c3d3d;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #4c3d3d;
+  cursor: pointer;
+  width: 25%;
+  height: 2.06rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 10px 5px 5px #4c3d3d;
 }
 
-.App-link {
-  color: #61dafb;
+.addItemButton:hover {
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ol {
+  margin-block-start: 1.5rem;
+  padding-inline-start: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px dotted #4c3d3d;
+  margin-bottom: 0.6rem;
+}
+
+.itemButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.itemButton:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.3);
 }
