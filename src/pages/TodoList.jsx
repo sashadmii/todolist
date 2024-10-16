@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
-import TodoItem from '../components/TodoItem';
-import TodoInput from '../components/TodoInput';
+import TodoItem from '../components/fuctionalComponents/TodoItem';
+import TodoInput from '../components/fuctionalComponents/TodoInput';
 
 import { getTodos, deleteTodo, addTodo } from '../api/api';
 
